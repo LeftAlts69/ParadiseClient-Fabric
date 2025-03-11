@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "id": "paradiseclient-fabric",
+  "id": "aloneclient-fabric",
   "version": "${version}",
-  "name": "ParadiseClient-Fabric",
+  "name": "AloneClient-Fabric",
   "description": "",
   "authors": [],
   "contact": {
