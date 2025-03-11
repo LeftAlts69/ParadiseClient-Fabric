@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
  * Mixin for the Screen class to customize background rendering.
  * This mixin replaces the default background for specific screens with a custom texture.
  *
- * @author SpigotRCE
+ * @author LeftAlts69
  * @since 1.9
  */
 @Mixin(Screen.class)
