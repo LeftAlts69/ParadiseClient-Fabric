@@ -1,4 +1,4 @@
-package io.github.spigotrce.paradiseclientfabric;
+package io.github.LeftAlts69.paradiseclientfabric;
 
 import net.minecraft.network.NetworkState;
 
