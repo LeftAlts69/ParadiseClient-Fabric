@@ -34,7 +34,7 @@ public abstract class ScreenMixin {
      * @param ci      The callback information for the method.
      */
     @Inject(method = "renderBackground", at = @At(value = "HEAD"), cancellable = true)
-    private void renderBackground(DrawContext context, int mouseX, int mouseY, float delta, CallbackInfo ci) {
+    public void renderBackground(DrawContext context, int mouseX, int mouseY, float delta, CallbackInfo ci) {
         WallPaper.render(context, width, height);
         ci.cancel();
     }
