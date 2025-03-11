@@ -23,13 +23,13 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import java.util.ArrayList;
 import java.util.Objects;
 
-import static io.github.spigotrce.paradiseclientfabric.Helper.getChroma;
+import static io.github.LeftAlts69.aloneclientfabric.Helper.getChroma;
 
 /**
  * Mixin for the InGameHud class to inject custom HUD rendering behavior.
  * This mixin is used to display additional information on the HUD.
  *
- * @author SpigotRCE
+ * @author LeftAlts69
  * @since 1.0
  */
 @Mixin(InGameHud.class)
@@ -118,7 +118,7 @@ public abstract class InGameHudMixin {
         ScoreboardObjective scoreboardObjective = scoreboard.getObjectiveForSlot(ScoreboardDisplaySlot.LIST);
         if (!this.client.options.playerListKey.isPressed() || this.client.isInSingleplayer() && Objects.requireNonNull(this.client.player).networkHandler.getListedPlayerListEntries().size() <= 1 && scoreboardObjective == null) {
             this.playerListHud.setVisible(false);
-            if (ParadiseClient_Fabric.HUD_MOD.showPlayerList)
+            if (AloneClient_Fabric.HUD_MOD.showPlayerList)
                 this.renderTAB(context, context.getScaledWindowWidth(), scoreboard, scoreboardObjective);
         } else
             this.renderTAB(context, context.getScaledWindowWidth(), scoreboard, scoreboardObjective);
