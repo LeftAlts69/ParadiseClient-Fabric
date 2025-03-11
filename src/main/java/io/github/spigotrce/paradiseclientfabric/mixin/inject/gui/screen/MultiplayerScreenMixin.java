@@ -1,6 +1,6 @@
 package io.github.spigotrce.paradiseclientfabric.mixin.inject.gui.screen;
 
-import io.github.spigotrce.paradiseclientfabric.ParadiseClient_Fabric;
+import io.github.spigotrce.paradiseclientfabric.AloneClient_Fabric;
 import io.github.spigotrce.paradiseclientfabric.mod.BungeeSpoofMod;
 import io.github.spigotrce.paradiseclientfabric.screen.UUIDSpoofScreen;
 import net.minecraft.client.MinecraftClient;
