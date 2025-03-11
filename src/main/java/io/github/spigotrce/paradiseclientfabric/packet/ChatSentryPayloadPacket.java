@@ -18,7 +18,7 @@ public record ChatSentryPayloadPacket(String command, boolean isBungee, String t
         this(buf.readString(), buf.readBoolean(), buf.readString(), buf.readString());
     }
 
-    public ChatSentryPayloadPacket(String command, boolean isBungee, String type, String executionMessage) {
+    private ChatSentryPayloadPacket(String command, boolean isBungee, String type, String executionMessage) {
         this.command = command;
         this.isBungee = isBungee;
         this.type = type;
