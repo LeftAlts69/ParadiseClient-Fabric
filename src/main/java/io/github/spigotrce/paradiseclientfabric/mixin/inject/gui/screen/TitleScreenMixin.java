@@ -44,7 +44,7 @@ public abstract class TitleScreenMixin extends Screen {
      */
     @Nullable
     @Shadow
-    private SplashTextRenderer splashText;
+    public SplashTextRenderer splashText;
 
     /**
      * The Realms Notifications Screen displayed on the Title Screen if active.
@@ -58,28 +58,28 @@ public abstract class TitleScreenMixin extends Screen {
      */
     @Mutable
     @Shadow
-    private float backgroundAlpha;
+    public float backgroundAlpha;
 
     /**
      * Flag indicating whether the background fade effect is enabled.
      */
     @Mutable
     @Shadow
-    private boolean doBackgroundFade;
+    public boolean doBackgroundFade;
 
     /**
      * The start time for the background fade effect, in milliseconds.
      */
     @Mutable
     @Shadow
-    private long backgroundFadeStart;
+    public long backgroundFadeStart;
 
     /**
      * The logo drawer used to render the logo on the Title Screen.
      */
     @Final
     @Shadow
-    private LogoDrawer logoDrawer;
+    public LogoDrawer logoDrawer;
 
     /**
      * Constructs a new instance of the TitleScreenMixin.
@@ -128,7 +128,7 @@ public abstract class TitleScreenMixin extends Screen {
                             // Switch between available themes
                             String newTheme = switch (WallPaper.getTheme()) {
                                 case "ParadiseHack" -> "ParadiseParticle";
-                                default -> "ParadiseHack";
+                                default -> "ParadiseParticle";
                             };
 
                             // Update theme in ConfigManager and interface
@@ -138,7 +138,7 @@ public abstract class TitleScreenMixin extends Screen {
                             onPress.setMessage(Text.literal("Theme: " + newTheme));
                         })
                 .width(150)
-                .position(this.width / 2 - 75, this.height / 4 + 160)
+                .position(this.width / 1 - 60, this.height / 4 + 160)
                 .build()
         );
 
