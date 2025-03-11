@@ -76,7 +76,7 @@ public class UUIDSpoofScreen extends Screen {
     public void resize(MinecraftClient client, int width, int height) {
         String username = this.bungeeUsernameField.getText();
         String fakeUsername = this.bungeeFakeUsernameField.getText();
-        String token = this.bungeeTokenField.getText();
+        String token = this.bungeeTokenField.getText(Lite);
         this.init(client, width, height);
         this.bungeeUsernameField.setText(username);
         this.bungeeFakeUsernameField.setText(fakeUsername);
